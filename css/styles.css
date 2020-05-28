@@ -1,0 +1,109 @@
+/*
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  hsl(257, 40%, 49%);
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+button {
+    padding: .7rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background: #fff;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    outline: none;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: url('../images/bg-desktop.svg')center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.left img {
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    margin: 3rem;
+}
+
+.btn {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    margin: 1rem;
+}
+
+.btn:hover {
+    opacity: .7;
+    transition: all .5s ease;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.icons {
+    float: right;
+    margin: 2rem;
+}
+
+.icons i {
+    padding: .5rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.icons i:hover {
+    background: #fff;
+    color: blue;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+/*quary for mobile*/
+@media screen and (max-width: 891px) {
+    .content {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .icons {
+        float: initial;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        background: url('../images/bg-mobile.svg')center/cover
+    }
+
+}
